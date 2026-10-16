@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#173629">
+  <title>Aroma White — Texas neighborhood café · Est. 2023</title>
+  <meta name="description" content="Aroma White is a fictional Texas neighborhood café portfolio concept established in 2023.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/shrimp.webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <section class="cinematic" id="cinematic" aria-label="Cinematic food introduction">
+    <div class="cinematic-sticky" id="cinematicSticky">
+      <div class="cinematic-wash" aria-hidden="true"></div>
+      <div class="cinematic-copy" aria-hidden="true">
+        <div class="cinematic-kicker">AROMA WHITE / A LITTLE SOMETHING SPECIAL</div>
+        <div class="cinematic-caption" id="cinematicCaption">Freshly plated. Slowly savored.</div>
+        <div class="cinematic-hint">SCROLL TO EXPLORE <span>↓</span></div>
+      </div>
+      <div class="food-stage" aria-hidden="true">
+        <img class="film-frame is-active" id="film1" src="assets/images/shrimp.webp" alt="">
+        <img class="film-frame" id="film2" src="assets/images/burger.webp" alt="">
+        <img class="film-frame" id="film3" src="assets/images/penne.webp" alt="">
+      </div>
+      <div class="page-reveal" id="pageReveal" aria-hidden="true">
+        <div class="page-reveal-fill"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="site-shell" id="siteShell">
+    <div class="top" id="home">
+      <div class="wrap">
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="brand" href="#home" aria-label="Aroma White home">
+            <img src="assets/images/aroma-white-logo.png" alt="Aroma White gold emblem">
+            <span class="brand-copy"><small>EST. 2023 · TEXAS CAFÉ</small><strong>Aroma White.</strong></span>
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+          <div class="navlinks" id="navlinks">
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#story">Our Story</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a class="btn light compact desktop-cta" href="#menu">Explore Menu</a>
+            <button class="bag-button" id="navCart" aria-label="Open shopping bag">Bag <span id="bagCount">0</span></button>
+          </div>
+        </nav>
+
+        <header class="hero">
+          <div class="hero-copy reveal">
+            <div class="eyebrow">✦ A LITTLE FRESH, A LOT OF LOVE</div>
+            <h1>Good food.<br><em>Good mood.</em><br>Every day.</h1>
+            <p>From slow Texas mornings to spontaneous lunch dates, find your happy place at Aroma White. Thoughtful food, easy prices, and a seat for everyone.</p>
+            <div class="actions">
+              <a class="btn light" href="#menu">Explore our menu ↗</a>
+              <a class="btn ghost" href="#story">Our story ↗</a>
+            </div>
+          </div>
+          <div class="hero-art reveal">
+            <div class="orbit" aria-hidden="true"><span>✦</span></div>
+            <img class="hero-plate" src="assets/images/salad.webp" alt="Signature Garden Salad">
+            <div class="plate-note"><strong>Made with care</strong><span>Everyday favorites · Since 2023</span></div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>✦ FRESHLY PREPARED</span><span>✦ GOOD FOOD, GOOD COMPANY</span><span>✦ YOUR EVERYDAY CAFÉ</span><span>✦ EST. 2023</span><span>✦ FRESHLY PREPARED</span><span>✦ GOOD FOOD, GOOD COMPANY</span></div></div>
+
+    <main>
+      <section class="section" id="menu">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div><div class="eyebrow">01 / THE GOOD STUFF</div><h2>Made for your cravings.</h2><p class="muted">Comforting favorites, fresh ingredients, and illustrative portfolio pricing.</p></div>
+            <span class="muted price-note">All prices in USD · Before demo tax</span>
+          </div>
+          <div class="filters reveal" id="filters" aria-label="Menu filters">
+            <button class="filter active" data-filter="all">Everything</button>
+            <button class="filter" data-filter="mains">Mains</button>
+            <button class="filter" data-filter="breakfast">Breakfast</button>
+            <button class="filter" data-filter="sweets">Sweets</button>
+            <button class="filter" data-filter="drinks">Drinks</button>
+          </div>
+          <div class="menu-grid" id="menuGrid"></div>
+        </div>
+      </section>
+
+      <section class="section featured" aria-labelledby="featuredTitle">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div><div class="eyebrow">02 / HOUSE FAVORITES</div><h2 id="featuredTitle">Featured dishes.</h2></div>
+            <div class="carousel-controls"><button id="featuredPrev" aria-label="Previous featured dish">←</button><button id="featuredNext" aria-label="Next featured dish">→</button></div>
+          </div>
+          <div class="featured-rail" id="featuredRail" tabindex="0" aria-label="Featured dishes carousel">
+            <article class="feature-card"><img src="assets/images/shrimp.webp" alt="Shrimp Pasta"><div><span>Chef pick</span><h3>Shrimp Pasta</h3><p>$15.95</p></div></article>
+            <article class="feature-card"><img src="assets/images/burger.webp" alt="Gourmet Burger"><div><span>House favorite</span><h3>Gourmet Burger</h3><p>$12.50</p></div></article>
+            <article class="feature-card"><img src="assets/images/penne.webp" alt="Creamy Herb Penne"><div><span>Comfort food</span><h3>Creamy Herb Penne</h3><p>$12.95</p></div></article>
+            <article class="feature-card"><img src="assets/images/toast.webp" alt="Avocado Breakfast Toast"><div><span>Brunch</span><h3>Avocado Breakfast Toast</h3><p>$9.50</p></div></article>
+            <article class="feature-card"><img src="assets/images/dessert.webp" alt="Chocolate Dessert"><div><span>Something sweet</span><h3>Chocolate Dessert</h3><p>$7.50</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story" id="story">
+        <div class="wrap story-grid">
+          <div class="story-pics reveal">
+            <img src="assets/images/interior.webp" alt="Warm café interior" loading="lazy">
+            <img src="assets/images/chef.webp" alt="Chef preparing food" loading="lazy">
+          </div>
+          <div class="story-copy reveal"><div class="eyebrow">03 / OUR STORY</div><h2>Come hungry.<br>Leave happy.</h2><p>Aroma White started in Texas in 2023 with a simple idea: create a welcoming neighborhood café where great food, warm spaces, and everyday moments come together.</p><p>We believe good food should be accessible, delicious, and thoughtfully prepared — familiar enough for every day, with enough character to make the moment feel special.</p><div class="est"><strong>2023</strong><span>THE YEAR OUR STORY BEGAN<br>MADE FOR EVERYDAY MOMENTS</span></div></div>
+        </div>
+      </section>
+
+      <section class="section kitchen" id="kitchen">
+        <div class="wrap">
+          <div class="section-head reveal"><div><div class="eyebrow">04 / OUR KITCHEN</div><h2>Prepared with purpose.</h2><p class="muted">A portfolio story about fresh ingredients, thoughtful preparation, and the little details behind every plate.</p></div></div>
+          <div class="kitchen-grid reveal">
+            <figure class="kitchen-wide"><img src="assets/images/pizza.webp" alt="Pizza preparation" loading="lazy"><figcaption><strong>Hands-on preparation</strong><span>Made with attention from first prep to final plate.</span></figcaption></figure>
+            <figure><img src="assets/images/chef.webp" alt="Chef working in the kitchen" loading="lazy"><figcaption><strong>Thoughtful cooking</strong><span>Simple ingredients, treated well.</span></figcaption></figure>
+            <figure><img src="assets/images/table.webp" alt="Food served at a café table" loading="lazy"><figcaption><strong>Ready for the table</strong><span>Comforting food designed for everyday moments.</span></figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="space">
+        <div class="wrap"><div class="eyebrow">05 / STAY A WHILE</div><h2>More than a meal.</h2><p class="experience-lead">A cozy corner, a warm welcome, and good company. Here’s the feeling behind Aroma White.</p><div class="experience-grid reveal"><img src="assets/images/booth.webp" alt="Cozy café booth" loading="lazy"><img src="assets/images/dining.webp" alt="Warm sunlit dining room" loading="lazy"><img src="assets/images/table.webp" alt="Dining table and food" loading="lazy"></div></div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">06 / SAMPLE REVIEWS</div><h2>A little love for the concept.</h2><p class="muted">Illustrative portfolio testimonials — not verified customer reviews.</p></div></div><div class="review-grid reveal">
+          <article><div class="stars" aria-hidden="true">★★★★★</div><p>“Warm, polished, and easygoing — exactly the kind of café concept I’d save for a relaxed weekend lunch.”</p><span>Sample review · Portfolio demo</span></article>
+          <article><div class="stars" aria-hidden="true">★★★★★</div><p>“The menu feels familiar without being boring, and the visual style makes every dish feel special.”</p><span>Sample review · Portfolio demo</span></article>
+          <article><div class="stars" aria-hidden="true">★★★★★</div><p>“A welcoming neighborhood feel with a premium touch. The ordering flow is clear and simple.”</p><span>Sample review · Portfolio demo</span></article>
+        </div></div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="wrap faq-wrap"><div class="eyebrow">07 / GOOD TO KNOW</div><h2>A few little questions.</h2>
+          <div class="faq-item"><button aria-expanded="false">What are the opening hours? <span class="plus">+</span></button><div class="faq-answer"><p>This is a fictional portfolio café, so real opening hours are not published. A production version could show live business hours here.</p></div></div>
+          <div class="faq-item"><button aria-expanded="false">Can I order food online? <span class="plus">+</span></button><div class="faq-answer"><p>You can add items to the bag and complete the sample checkout. No real order is transmitted and no payment is processed.</p></div></div>
+          <div class="faq-item"><button aria-expanded="false">Are vegetarian options available? <span class="plus">+</span></button><div class="faq-answer"><p>The sample menu includes vegetarian-friendly items such as Garden Salad, Creamy Herb Penne, Avocado Toast and Iced Matcha.</p></div></div>
+          <div class="faq-item"><button aria-expanded="false">How are allergies handled? <span class="plus">+</span></button><div class="faq-answer"><p>Allergy information shown here is illustrative only. A real restaurant site should provide verified ingredient and cross-contact guidance from the kitchen.</p></div></div>
+          <div class="faq-item"><button aria-expanded="false">Is pickup available? <span class="plus">+</span></button><div class="faq-answer"><p>Pickup is included as a demonstration option in the sample checkout flow. It does not create a real pickup order.</p></div></div>
+          <div class="faq-item"><button aria-expanded="false">Which payment methods are accepted? <span class="plus">+</span></button><div class="faq-answer"><p>The portfolio checkout does not accept payment. A production version could integrate secure card and digital-wallet processing.</p></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="wrap"><div class="footer-grid"><div><img class="logofoot" src="assets/images/aroma-white-logo.png" alt="Aroma White gold emblem"><h3>Aroma White.</h3><p>Fictional neighborhood café portfolio concept.<br>Texas, USA · Established 2023.</p></div><div><strong>Quick links</strong><a href="#menu">Our Menu</a><a href="#story">Our Story</a><a href="#kitchen">Our Kitchen</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div><div><strong>Menu</strong><a href="#menu">Mains</a><a href="#menu">Breakfast</a><a href="#menu">Sweets</a><a href="#menu">Drinks</a></div><div><strong>Info</strong><a href="#portfolioNote">Portfolio disclaimer</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a><span>No public phone, street address or social account is claimed.</span></div></div><div class="footer-notes"><details id="portfolioNote"><summary>Portfolio disclaimer</summary><p>Aroma White is a fictional concept created to demonstrate design, interaction and frontend development. It is not an operating café.</p></details><details id="privacy"><summary>Privacy</summary><p>This static demo stores only cart contents in your own browser localStorage. It does not transmit form data to a server.</p></details><details id="terms"><summary>Terms</summary><p>Menu details, reviews, prices and operational information are illustrative portfolio content.</p></details></div><div class="copyright">© <span id="year"></span> Aroma White concept · Built as a frontend portfolio demonstration.</div></div></footer>
+  </div>
+
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-top"><div><div class="eyebrow">YOUR ORDER</div><h2>Bag</h2></div><button class="iconbtn" id="closeCart" aria-label="Close shopping bag">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="totals" id="totals"></div>
+    <button class="btn dark full" id="checkoutBtn">Continue to demo checkout</button>
+    <form class="checkout" id="checkout" novalidate><div class="demo-badge">DEMONSTRATION CHECKOUT · NO PAYMENT</div><label>Customer name<input name="name" autocomplete="name" required minlength="2"></label><label>Email<input name="email" type="email" autocomplete="email" required></label><label>Pickup preference<select name="pickup" required><option value="">Choose a sample window</option><option>ASAP · Demo</option><option>In 30 minutes · Demo</option><option>In 60 minutes · Demo</option></select></label><label>Order note<textarea name="note" rows="3" placeholder="Optional demo note"></textarea></label><button class="btn dark full" type="submit">Place sample order</button><p class="notice">This is a portfolio simulation. No order, payment, email, or personal data is sent anywhere.</p></form>
+    <div class="cart-notice" id="cartNotice" role="status" aria-live="polite"></div>
+  </aside>
+
+  <dialog class="product-dialog" id="productDialog"><button class="dialog-close" id="dialogClose" aria-label="Close product details">×</button><div id="dialogContent"></div></dialog>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
